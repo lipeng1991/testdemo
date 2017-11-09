@@ -118,4 +118,4 @@ class PointOne(StructureOne):
 
 print(inspect.signature(StockOne))
 
-stockone = StockOne(1,2,3)
+stockone = StockOne(1, 2, 3)
