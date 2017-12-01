@@ -6,3 +6,5 @@
 * 4.args_and_kwargs_power_limit.py: *args和**kwargs的强制规定参数签名
 * 5.class_mandatory_coding_rules.py:  在类中强制使用编程规约
 * 6.avoid_duplicate_attributes: 避免重复的属性方法
+* 7.define_context_manager: 定义简单的上下文管理器
+* 8.local_exec_code.py : 在局部变量域中执行代码
