@@ -8,3 +8,4 @@
 * 6.avoid_duplicate_attributes: 避免重复的属性方法
 * 7.define_context_manager: 定义简单的上下文管理器
 * 8.local_exec_code.py : 在局部变量域中执行代码
+* 9.asyncio_demo1.py : asyncio 的demo1
