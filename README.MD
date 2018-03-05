@@ -11,3 +11,4 @@
 * 9.asyncio_demo1.py : asyncio 的demo1
 * 10. gnomesort_demo.py : 排序算法之侏儒算法和归并算法
 * 11. look_forOmax_perm.py :寻找最大排列问题
+* 12. singleton.py :单例模式
