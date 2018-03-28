@@ -16,3 +16,4 @@
 * 14. heap_sort.py : 堆排序
 * 15. removeElement: 移除元素
 * 16. linked_list01: 链表01demo
+* 17. linked_list_removeElements : 删除链表中等于给定值 val 的所有元素
