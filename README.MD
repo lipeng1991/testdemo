@@ -13,3 +13,6 @@
 * 11. look_forOmax_perm.py :寻找最大排列问题
 * 12. singleton.py :单例模式
 * 13. dice_n_to_sim.py : n个骰子朝上点数的和的数字的出现概率
+* 14. heap_sort.py : 堆排序
+* 15. removeElement: 移除元素
+* 16. linked_list01: 链表01demo
