@@ -20,4 +20,6 @@
 * 18. linked_list_removeEnsureElements : 删除链表的指定节点
 * 19. linked_list_sum_two_num : 链表的两个数相加
 * 20. linked_list_sum_two_num_2 : 链表的两个数相加(II)
-* 21. 21_every_k_set_of_flip_list: 每K个节点做翻转
+* 21. every_k_set_of_flip_list: 每K个节点做翻转
+* 22. linked_list_reverse: 翻转一个链表
+* 23. quick_sort: 快速排序
