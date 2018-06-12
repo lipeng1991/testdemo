@@ -23,3 +23,6 @@
 * 21. every_k_set_of_flip_list: 每K个节点做翻转
 * 22. linked_list_reverse: 翻转一个链表
 * 23. quick_sort: 快速排序
+* 24. binary_search_tree: 二叉查找树
+* 25. sortedcollection: bisect的用法
+* 26. strkeydict0: 在查询的时候把非字符串的键抓换为字符串
