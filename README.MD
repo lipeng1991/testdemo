@@ -27,4 +27,4 @@
 * 25. sortedcollection: bisect的用法
 * 26. strkeydict0: 在查询的时候把非字符串的键抓换为字符串
 * 27. strategies: 策略模式在函数式编程的实现
-* 28. simulation_rpc_use_socket :socket模拟rpc请求
+* 28. python_descriptor: python描述符的详解
