@@ -30,3 +30,4 @@
 * 28. python_descriptor: python描述符的详解
 * 29. abstract_class：抽象类
 * 30. iterable_obj_and_iterator可迭代对象和迭代器对象之间的关系
+* 31. immutable_tuple 元组的相对不可变性
