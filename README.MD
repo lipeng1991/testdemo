@@ -29,3 +29,4 @@
 * 27. strategies: 策略模式在函数式编程的实现
 * 28. python_descriptor: python描述符的详解
 * 29. abstract_class：抽象类
+* 30. iterable_obj_and_iterator可迭代对象和迭代器对象之间的关系
