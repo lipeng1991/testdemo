@@ -31,3 +31,6 @@
 * 29. abstract_class：抽象类
 * 30. iterable_obj_and_iterator可迭代对象和迭代器对象之间的关系
 * 31. immutable_tuple 元组的相对不可变性
+* 32. sentence_01 单词序列第一版本
+* 33. comparison_of_iterable_objects_and_iterators 可迭代对象和迭代器的对比
+* 34. sentence_02 单词序列第二版本(典型的迭代器)
