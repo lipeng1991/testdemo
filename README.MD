@@ -34,3 +34,5 @@
 * 32. sentence_01 单词序列第一版本
 * 33. comparison_of_iterable_objects_and_iterators 可迭代对象和迭代器的对比
 * 34. sentence_02 单词序列第二版本(典型的迭代器)
+* 35. sentence_03 单词排序的最终版本(生成器函数)
+* 36. with 上下文管理器
