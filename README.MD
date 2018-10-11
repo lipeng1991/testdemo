@@ -11,29 +11,29 @@
 * 9.asyncio_demo1.py : asyncio 的demo1
 * 10.gnomesort_demo.py : 排序算法之侏儒算法和归并算法
 * 11.look_forOmax_perm.py :寻找最大排列问题
-* 12. singleton.py :单例模式
-* 13. dice_n_to_sim.py : n个骰子朝上点数的和的数字的出现概率
-* 14. heap_sort.py : 堆排序
-* 15. removeElement: 移除元素
-* 16. linked_list01: 链表01demo
-* 17. linked_list_removeElements : 删除链表中等于给定值 val 的所有元素
-* 18. linked_list_removeEnsureElements : 删除链表的指定节点
-* 19. linked_list_sum_two_num : 链表的两个数相加
-* 20. linked_list_sum_two_num_2 : 链表的两个数相加(II)
-* 21. every_k_set_of_flip_list: 每K个节点做翻转
-* 22. linked_list_reverse: 翻转一个链表
-* 23. quick_sort: 快速排序
-* 24. binary_search_tree: 二叉查找树
-* 25. sortedcollection: bisect的用法
-* 26. strkeydict0: 在查询的时候把非字符串的键抓换为字符串
-* 27. strategies: 策略模式在函数式编程的实现
-* 28. python_descriptor: python描述符的详解
-* 29. abstract_class：抽象类
-* 30. iterable_obj_and_iterator可迭代对象和迭代器对象之间的关系
-* 31. immutable_tuple 元组的相对不可变性
-* 32. sentence_01 单词序列第一版本
-* 33. comparison_of_iterable_objects_and_iterators 可迭代对象和迭代器的对比
-* 34. sentence_02 单词序列第二版本(典型的迭代器)
-* 35. sentence_03 单词排序的最终版本(生成器函数)
-* 36. with 上下文管理器
-* 37. bracket_matching 括号匹配
+* 12.singleton.py :单例模式
+* 13.dice_n_to_sim.py : n个骰子朝上点数的和的数字的出现概率
+* 14.heap_sort.py : 堆排序
+* 15.removeElement: 移除元素
+* 16.linked_list01: 链表01demo
+* 17.linked_list_removeElements : 删除链表中等于给定值 val 的所有元素
+* 18.linked_list_removeEnsureElements : 删除链表的指定节点
+* 19.linked_list_sum_two_num : 链表的两个数相加
+* 20.linked_list_sum_two_num_2 : 链表的两个数相加(II)
+* 21.every_k_set_of_flip_list: 每K个节点做翻转
+* 22.linked_list_reverse: 翻转一个链表
+* 23.quick_sort: 快速排序
+* 24.binary_search_tree: 二叉查找树
+* 25.sortedcollection: bisect的用法
+* 26.strkeydict0: 在查询的时候把非字符串的键抓换为字符串
+* 27.strategies: 策略模式在函数式编程的实现
+* 28.python_descriptor: python描述符的详解
+* 29.abstract_class：抽象类
+* 30.iterable_obj_and_iterator可迭代对象和迭代器对象之间的关系
+* 31.immutable_tuple 元组的相对不可变性
+* 32.sentence_01 单词序列第一版本
+* 33.comparison_of_iterable_objects_and_iterators 可迭代对象和迭代器的对比
+* 34.sentence_02 单词序列第二版本(典型的迭代器)
+* 35.sentence_03 单词排序的最终版本(生成器函数)
+* 36.with 上下文管理器
+* 37.bracket_matching 括号匹配
