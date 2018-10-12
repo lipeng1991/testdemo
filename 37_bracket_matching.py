@@ -2,8 +2,13 @@
 # -*- coding: utf-8 -*-
 # create by oldman
 # Date: 2018/10/11
-
-
+"""
+使用栈实现括号的匹配判断
+>>> judgment_brackets_matching(a)
+    True
+>>> judgment_brackets_matching(b)
+    False
+"""
 open_brackets = '{[(<'
 close_brackets = '}])>'
 map_brackets = {'}': '{', ']': '[', ')': '(', '>': '<'}
@@ -35,6 +40,5 @@ def judgment_brackets_matching(rows):
 a = '<222qqq[{}({})111]>'
 b = 'judkslajdklsa{}><'
 
-if __name__ == '__main__':
-    print(judgment_brackets_matching(a))
-    print(judgment_brackets_matching(b))
+assert judgment_brackets_matching(a) == True
+assert judgment_brackets_matching(b) == False
