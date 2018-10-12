@@ -56,10 +56,10 @@ class ArrayQueue():
             self.head += 1
             return res
 
+
 a = ArrayQueue(3)
 assert a.enqueue(1)
 assert a.enqueue(2)
 assert a.enqueue(3)
 assert not a.enqueue(4)
 assert a.dequeue() == 1
-assert a.enqueue(4)
