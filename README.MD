@@ -41,3 +41,4 @@
 * 39.array_implementation_loop_queue 数组实现循环队列
 * 40.bubble_sort 冒泡排序
 * 41.insert_sort 插入排序
+* 42.select_sort 选择排序
