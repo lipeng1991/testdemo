@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # create by oldman
 # Date: 2018/9/30
+"""
+with 语句管理上下文
+"""
 
 
 class LookingGlass:
@@ -20,6 +23,8 @@ class LookingGlass:
         if exc_type is ZeroDivisionError:
             print('Please DO NOT divide by zero!')
             return True
+
+
 with LookingGlass() as what:
     print('Alice, Kitty and Snowdrop')
     print(what)
@@ -27,6 +32,3 @@ with LookingGlass() as what:
 print(what)
 
 print('Back to normal!')
-
-
-
