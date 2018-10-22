@@ -13,7 +13,7 @@
 
 def quick_sort(arr, left, right):
     if left < right:
-        pivot_ = partition(arr, left, right)
+        pivot = partition(arr, left, right)
         quick_sort(arr, left, pivot - 1)
         quick_sort(arr, pivot + 1, right)
 
