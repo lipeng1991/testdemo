@@ -31,6 +31,8 @@ def partition(arr, left, right):
 
     for i in range(left + 1, right + 1):
         if arr[i] < pivot:
+            # 如果此处索引的值小于基准值, 基准值的位置后移一位
+            # 并将后移一位的值和这个值交换, 让基准位置及之前的始终小于基准值
             pivot_index += 1
             if pivot_index != i:
                 arr[pivot_index], arr[i] = arr[i], arr[pivot_index]
