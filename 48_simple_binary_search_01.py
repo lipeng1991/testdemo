@@ -6,6 +6,8 @@
 >>> a = [1, 2,3 ,4, 5, 6, 7, 8]
 >>> simple_binary_search(a, 8, 4)
 3
+>>> simple_binary_search_internally(a,0,7,4)
+3
 """
 
 
@@ -28,3 +30,23 @@ def simple_binary_search(arr, n, value):
         else:
             high = mid - 1
     return -1
+
+
+def simple_binary_search_internally(arr, low, high, value):
+    """
+    简单二分查找的递归实现
+    :param arr: 有序数组
+    :param low:
+    :param high:
+    :param value: 查找值
+    :return:
+    """
+    if low > high:
+        return -1
+    mid = low + ((high - low) >> 1)
+    if arr[mid] == value:
+        return mid
+    if arr[mid] < value:
+        return simple_binary_search_internally(arr, mid+1, high, value)
+    else:
+        return simple_binary_search_internally()
