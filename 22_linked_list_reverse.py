@@ -89,3 +89,9 @@ class Solution(object):
         return dummy.next
 
 
+# 翻转链表
+def reverseList(head):
+    cur, pre = head, None
+    while cur:
+        cur.next, pre, cur = pre, cur, cur.next
+    return pre
