@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 # create by oldman
 # Date: 2018/11/20
+
+
 class Node:
     def __init__(self, data):
         self.data = data
