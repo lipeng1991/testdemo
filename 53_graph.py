@@ -22,7 +22,7 @@ class Graph(object):
             self.add_node(node)
 
     def add_node(self, node):
-        if  node not in self.nodes():
+        if node not in self.nodes():
             self.node_neighbors[node] = []
 
     def add_edge(self, edge):
