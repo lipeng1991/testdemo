@@ -13,9 +13,11 @@
 1
 """
 import time
+
 """
 字符串匹配算法
 """
+
 
 def bf(t, p):
     """
@@ -41,3 +43,23 @@ def bf(t, p):
     print(count)
     print(time.time() - start)
     return count
+
+
+def rk(t, p):
+    """
+    RK算法，
+    :param t: 主串
+    :param p: 模式串
+    :return:
+    """
+    pass
+
+
+def bm(t, p):
+    """
+    BM算法(Boyer-Moore)
+    :param t:
+    :param p:
+    :return:
+    """
+    pass
