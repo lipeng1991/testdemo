@@ -21,7 +21,7 @@ import time
 
 def bf(t, p):
     """
-    BF算法
+    BF算法 Brute Force 暴力匹配算法，朴素匹配算法
     :param t:主串
     :param p:模式串
     :return:
@@ -45,21 +45,58 @@ def bf(t, p):
     return count
 
 
-def rk(t, p):
+def bf_02(t, p):
     """
-    RK算法，
-    :param t: 主串
-    :param p: 模式串
-    :return:
-    """
-    pass
-
-
-def bm(t, p):
-    """
-    BM算法(Boyer-Moore)
+    两个 while 循环嵌套，参考Algorithms 4th, Robert Sedgewick, page 760。在内层指针前进时，外层指针不动，直到内从指针循环完以后才前进一位。
     :param t:
     :param p:
     :return:
     """
-    pass
+    start = time.time()
+    n = len(t)
+    m = len(p)
+    res = []
+    i = 0
+    while i <= (n - m):
+        j = 0
+        while j < m:
+            if t[i + j] != p[j]:
+                break
+            j += 1
+        if j == m:
+            res.append(i)
+        i += 1
+    print(time.time() - start)
+    return res
+
+
+def bf_03(txt, pattern):
+    """
+    只有一个 while，但也是控制两个指针。如果不匹配，目标文本字符串的指针向前走一位，而模式字符串的指针会到下标 0 的位置。这种方法相当于上一种方法的改进型，特点是两个指针一起前进。、、
+    :param txt:
+    :param pattern:
+    :return:
+    """
+    N = len(txt)
+    M = len(pattern)
+
+    i = 0  # pointer into text
+    j = 0  # pointer into pattern
+
+    while i < N and j < M:
+        if txt[i] == pattern[j]:
+            i += 1
+            j += 1
+            if j == M:
+                return i - j
+        else:
+            i = i - j + 1
+            j = 0
+    return -1
+
+
+t = "this is a big apple,this is a big apple,this is a big apple,this is a big apple."
+p = "apple"
+bf(t, p)
+print(bf_02(t, p))
+
