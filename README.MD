@@ -55,4 +55,5 @@
 * 53.graph 图(BFS和DFS)
 * 54.stringmatching01 字符串匹配算法(BF算法和RK算法)
 * 55.recursive01 递归解决赏金问题
-* 55.tire_tree tire字典树
+* 56.tire_tree tire字典树
+* 57.greedy_algorithm 贪心算法
