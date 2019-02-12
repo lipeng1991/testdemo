@@ -8,7 +8,7 @@
 """
 
 
-def greedy_money(m):
+def   greedy_money(m):
     """
     找零问题：假设只有 1 元、 2 元、5元、 10元，20元，50元的纸币。在超市结账 时，如果 需要找零钱， 收银员希望将最少的纸币数找给顾客。那么，给定 需要找的零钱数目，如何求得最少的纸币数呢？
     :param m:要找零的钱数
@@ -35,6 +35,7 @@ def greedy_money(m):
         i -= 1
 
 
+greedy_money(12)
 greedy_money(12)
 
 
