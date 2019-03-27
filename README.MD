@@ -58,4 +58,5 @@
 * 56.tire_tree tire字典树
 * 57.greedy_algorithm 贪心算法
 * 58.backtracking_algorithm 回溯算法
-* 59. find_kth_largest_in_stream 数据流中的第K大元素(优先队列)
+* 59.find_kth_largest_in_stream 数据流中的第K大元素(优先队列)
+* 60. max_sliding_window 返回滑动窗口中的最大值
