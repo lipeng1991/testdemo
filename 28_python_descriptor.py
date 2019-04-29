@@ -1,8 +1,11 @@
 # coding=utf-8
 # create by oldman at 2018/6/17
+"""
+python中的描述符
+"""
 
 class Des(object):
-    def __init__(self,init_value):
+    def __init__(self, init_value):
         self.value = init_value
 
     def __get__(self, instance, owner):
@@ -16,9 +19,9 @@ class Des(object):
     def __delete__(self, instance):
         print('call __delete__', instance)
 
-    # def __setattr__(self, key, value):
-    #     print('call __setattr__',key,value)
-    #     self.value=value
+        # def __setattr__(self, key, value):
+        #     print('call __setattr__',key,value)
+        #     self.value=value
 
 
 class Widget():
@@ -28,11 +31,44 @@ class Widget():
 def main():
     w = Widget()
     print(type(w.t))
-    w.t=1
+    w.t = 1
     print(222222)
     print(w.t, Widget.t)
     print(333333)
     del w.t
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
+
+
+class lazy(object):
+    def __init__(self, func):
+        self.func = func
+
+    def __get__(self, instance, owner):
+        val = self.func(instance)
+        setattr(instance, self.func.__name__, val)
+        return val
+        # def __set__(self, instance, value):
+        #     pass
+
+
+class Circle(object):
+    def __init__(self, radius):
+        self.radius = radius
+
+    @lazy
+    def area(self):
+        print('evalute')
+        return 3.14 * self.radius ** 2
+
+    def __getattr__(self, item):
+        return 1
+
+
+c = Circle(4)
+print(c.radius)
+print(c.area)
+print(c.area)
+print(c.a)
