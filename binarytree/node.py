@@ -14,3 +14,7 @@ class Node(object):
         self.data = data
         self.lchild = None
         self.rchild = None
+
+
+def testfunc(a):
+    print(a)
