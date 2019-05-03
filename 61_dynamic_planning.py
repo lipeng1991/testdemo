@@ -101,7 +101,7 @@ def f_2(weight, n, w, value):
         for j in range(0, w - weight[i] + 1):  # 选择第i个物品加入背包
             if states[i - 1][j] >= 0:
                 v = states[i - 1][j] + value[i]
-                if v > states[i - 1][j + weight[i]]:  # 合并每一层(i,cw)重复的状态，值记录cv最大的那个状态
+                if v > states[i][j + weight[i]]:  # 合并每一层(i,cw)重复的状态，值记录cv最大的那个状态
                     states[i][j + weight[i]] = v
     maxvalue = -1
     for i in range(w, -1, -1):
