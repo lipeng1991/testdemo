@@ -37,6 +37,7 @@ maxW = 0
 weight = [2, 2, 4, 6, 3]  # 每个物品的重量
 n = 5  # 物品个数
 w = 20  # 背包承受的最大重量
+res_dict = {}
 
 
 def f(i, cw):
@@ -53,10 +54,13 @@ def f(i, cw):
         if cw > maxW:
             maxW = cw
         return
+    if '{}_{}'.format(i, cw) in res_dict:
+        return
+    res_dict['{}_{}'.format(i, cw)] = True
     f(i + 1, cw)  # 选择不装第i个物品
     if cw + weight[i] <= w:
         f(i + 1, cw + weight[i])  # 选择装第i个物品
 
 
-f(0,0)
+f(0, 0)
 print(maxW)
