@@ -11,12 +11,17 @@
 maxW = 0
 weight = [2, 2, 4, 6, 3]  # 每个物品的重量
 n = 5  # 物品个数
-w = 20  # 背包承受的最大重量
+w = 9  # 背包承受的最大重量
+
+"""
+0-1
+我们有一个背包，背包总的承载重量是 Wkg。现在我们有 n 个物品，每个物品的重量不等，并且不可分割。我们现在期望选择几件物品，装载到背包中。在不超过背包所能装载重量的前提下，如何让背包中物品的总重量最大？
+"""
 
 
 def f(weight, n, w):
     """
-
+    动态规划
     :param weight: 每个物品的重量
     :param n: 物品个数
     :param w: 背包承受的最大重量
@@ -38,11 +43,12 @@ def f(weight, n, w):
     return 0
 
 
-print(f(weight, 5, 20))
+print(f(weight, n, w))
 
 
 def f2(weight, n, w):
     """
+    动态规划降低空间复杂度
     :param weight: 每个物品的重量
     :param n: 物品个数
     :param w: 背包承受的最大重量
@@ -61,4 +67,47 @@ def f2(weight, n, w):
     return 0
 
 
-print(f2(weight, 5, 20))
+print(f2(weight, n, w))
+
+"""
+背包问题升级
+0-1
+我们有一个背包，背包总的承载重量是 Wkg。现在我们有 n 个物品，每个物品的重量不等，价值不等，并且不可分割。我们现在期望选择几件物品，装载到背包中。在不超过背包所能装载重量的前提下，如何让背包中物品的总价值最大？
+"""
+
+maxW = 0
+weight = [2, 2, 4, 6, 3]  # 每个物品的重量
+value = [3, 4, 8, 9, 6]
+n = 5  # 物品个数
+w = 9  # 背包承受的最大重量
+
+
+def f_2(weight, n, w, value):
+    """
+    动态规划
+    :param value: 每个物品的价值
+    :param weight: 每个物品的重量
+    :param n: 物品个数
+    :param w: 背包承受的最大重量
+    :return:
+    """
+    states = [[-1] * (w+1) for i in range(0, n)]
+    states[0][0] = 0
+    states[0][weight[0]] = value[0]
+    for i in range(1, n):  # 动态规划，状态转移
+        for j in range(0, w + 1):  # 不选择第i个物品加入背包
+            if states[i - 1][j] >= 0:
+                states[i][j] = states[i - 1][j]
+        for j in range(0, w - weight[i] + 1):  # 选择第i个物品加入背包
+            if states[i - 1][j] >= 0:
+                v = states[i - 1][j] + value[i]
+                if v > states[i - 1][j + weight[i]]:  # 合并每一层(i,cw)重复的状态，值记录cv最大的那个状态
+                    states[i][j + weight[i]] = v
+    maxvalue = -1
+    for i in range(w, -1, -1):
+        if states[n - 1][i] > maxvalue:
+            maxvalue = states[n - 1][i]
+    return maxvalue
+
+
+print(f_2(weight, n, w, value))
