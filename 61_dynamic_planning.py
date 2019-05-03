@@ -111,3 +111,29 @@ def f_2(weight, n, w, value):
 
 
 print(f_2(weight, n, w, value))
+
+
+def f2_2(weight, n, w, value):
+    """
+    动态规划(优化版降低空间复杂度)
+    :param value: 每个物品的价值
+    :param weight: 每个物品的重量
+    :param n: 物品个数
+    :param w: 背包承受的最大重量
+    :return:
+    """
+    states = [-1] * (w+1)
+    states[0] = 0
+    states[weight[0]] = value[0]
+    for i in range(1, n):  # 动态规划，状态转移
+        for j in range(w-weight[i], -1, -1):  # 选择第i个物品加入背包
+            if states[j] >= 0:
+                v = states[j] + value[i]
+                if v > states[j + weight[i]]:  # 合并每一层(i,cw)重复的状态，值记录cv最大的那个状态
+                    states[j + weight[i]] = v
+    maxvalue = -1
+    for i in range(w, -1, -1):
+        if states[i] > maxvalue:
+            maxvalue = states[i]
+    return maxvalue
+print(f2_2(weight, n, w, value))
