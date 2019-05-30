@@ -33,6 +33,6 @@ def threeSum(nums):
             if thre in dict_nums:
                 if thre in (i, j) and dict_nums[thre] >= 2:
                     res.append([i, j, thre])
-                if thre > i and thre < j:
+                if i < thre < j:
                     res.append([i, j, thre])
     return res
