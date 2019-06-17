@@ -31,7 +31,7 @@ class Widget():
 def main():
     w = Widget()
     print(type(w.t))
-    w.t = 1
+    w.t = 11
     print(222222)
     print(w.t, Widget.t)
     print(333333)
