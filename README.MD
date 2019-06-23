@@ -66,3 +66,4 @@
 * 64.search 搜索旋转数组
 * 65.searchRange 在排序数组中查找元素的第一个和最后一个位置
 * 66.threeSum 三数之和/最接近的三数之和/删除排序数组中重复的项/移除元素
+* 66.attribute_and_descriptor python属性查找和描述符
