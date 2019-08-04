@@ -21,7 +21,7 @@ trie.search("app");     // 返回 true
 链接：https://leetcode-cn.com/problems/implement-trie-prefix-tree
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
-
+import unittest
 
 class Trie:
     def __init__(self):
@@ -69,3 +69,14 @@ class Trie:
                 return False
             children = children[char]
         return False
+
+
+class TestTrie(unittest.TestCase):
+    def test_trie(self):
+        obj = Trie()
+        obj.insert("hello")
+        self.assertEqual(obj.search("hello"), True)
+
+
+
+unittest.main()
