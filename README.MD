@@ -73,3 +73,5 @@
 * 71.max_area 盛最多水的容器
 * 72.socketdemo1 socket编程1
 * 73.arrangement 排列组合
+* 74.socketclientdemo socket编程客户端
+* 75.socketserverdemo socket编程服务器端
