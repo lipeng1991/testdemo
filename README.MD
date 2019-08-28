@@ -76,6 +76,7 @@
 * 74.socketclientdemo socket编程客户端
 * 75.socketserverdemo socket编程服务器端
 * 76.traversal_two_tree 二叉树前，中，后序遍历
-* 77.mypower 实现x的n次幂
-* 78.majority_element 众数
-* 79.maxProfit 买卖股票的最佳时机
+* 77.mypower 50实现x的n次幂
+* 78.majority_element 169众数
+* 79.maxProfit 122买卖股票的最佳时机
+* 80.level_order 102二叉树的层次遍历
