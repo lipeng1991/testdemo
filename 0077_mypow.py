@@ -34,3 +34,22 @@ def myPow(x,n):
     if n%2:
         return x*(myPow(x,n-1))
     return myPow(x*x,n/2)
+
+
+def myPow2(x, n):
+    """
+    非递归实现
+    :param x:
+    :param n:
+    :return:
+    """
+    if n<0:
+        x = 1/x
+        n = -n
+    pows = 1
+    while n:
+        if n & 1:
+            pows *=x
+        x *=x
+        n >>= 1
+    return pows
