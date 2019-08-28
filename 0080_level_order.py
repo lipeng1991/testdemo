@@ -44,3 +44,29 @@ def  levelOrder(root):
                 queue.append(node.right)
         result.append(current_level)
     return result
+
+
+def levelOrder1(root):
+    """
+    递归实现
+    :param root:
+    :return:
+    """
+    levels = []
+    if not root:
+        return levels
+
+    def helper(node, level):
+        # strat the current level
+        if len(levels) == level:
+            levels.append([])
+
+        # append the current node value
+        levels[level].append(node.val)
+
+        if node.left:
+            helper(node.left, level+1)
+        if node.right:
+            helper(node.right, level+1)
+
+    helper(root, 0)
