@@ -1,3 +1,4 @@
 greenlet
 requests
 asyncio==3.4.3
+redis
