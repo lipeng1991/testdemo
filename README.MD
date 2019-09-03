@@ -84,3 +84,4 @@
 * 82.redis_distribute_lock redis实现分布式事务
 * 83.method_cache 方法缓存
 * 84.generate_parenthesis 22括号生成
+* 85.n_queens 51 n皇后问题
