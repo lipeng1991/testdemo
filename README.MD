@@ -85,3 +85,4 @@
 * 83.method_cache 方法缓存
 * 84.generate_parenthesis 22括号生成
 * 85.n_queens 51 n皇后问题
+* 86.combination_sum 39组合总和
