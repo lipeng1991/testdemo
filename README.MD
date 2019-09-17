@@ -86,3 +86,4 @@
 * 84.generate_parenthesis 22括号生成
 * 85.n_queens 51 n皇后问题
 * 86.sudo 数独问题
+* 87.combination_sum 39组合总和
