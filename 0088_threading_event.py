@@ -10,10 +10,7 @@ c_event = threading.Event()
 d_event = threading.Event()
 
 
-
-
-
-def  print_a(event, next_event):
+def print_a(event, next_event):
     for i in range(3):
         event.wait()
         print("a{}".format(i))
@@ -21,14 +18,15 @@ def  print_a(event, next_event):
         next_event.set()
 
 
-def  print_b(event, next_event):
+def print_b(event, next_event):
     for i in range(3):
         event.wait()
         print("b{}".format(i))
         event.clear()
         next_event.set()
 
-def  print_c(event, next_event):
+
+def print_c(event, next_event):
     for i in range(3):
         event.wait()
         print("c{}".format(i))
@@ -36,7 +34,7 @@ def  print_c(event, next_event):
         next_event.set()
 
 
-def  print_d(event, next_event):
+def print_d(event, next_event):
     for i in range(3):
         event.wait()
         print("d{}".format(i))
