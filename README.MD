@@ -91,4 +91,5 @@
 * 89.coroutine_demo 协程demo
 * 90.kafka_demo kafka的demo
 * 91.builder_pattern 建造者模式的使用
-* 91.factory_method 工厂方法模式的使用
+* 92.factory_method 工厂方法模式的使用
+* 93.observer_pattern 观察者模式
