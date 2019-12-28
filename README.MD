@@ -93,4 +93,4 @@
 * 91.builder_pattern 建造者模式的使用
 * 92.factory_method 工厂方法模式的使用
 * 93.observer_pattern 观察者模式
-* 93.decorator_pattern 装饰者模式
+* 94.decorator_pattern 装饰者模式

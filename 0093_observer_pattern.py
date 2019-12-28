@@ -34,7 +34,7 @@ class Subject(metaclass=ABCMeta):
         pass
 
 
-class DisplayEment(metaclass=ABCMeta):
+class DisplayElement(metaclass=ABCMeta):
     @abstractmethod
     def display(self):
         pass
@@ -68,7 +68,7 @@ class WeatherData(Subject):
         self.measurements_changed()
 
 
-class CurrentConditionsDisplay(Observer, DisplayEment):
+class CurrentConditionsDisplay(Observer, DisplayElement):
     pressure: object
     humidity: object
     temp: object
