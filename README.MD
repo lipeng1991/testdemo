@@ -94,3 +94,4 @@
 * 92.factory_method 工厂方法模式的使用
 * 93.observer_pattern 观察者模式
 * 94.decorator_pattern 装饰者模式
+* 94.command_pattern 命令装饰器
