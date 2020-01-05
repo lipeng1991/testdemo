@@ -96,3 +96,4 @@
 * 94.decorator_pattern 装饰者模式
 * 95.command_pattern 命令装饰器
 * 96.meta_class_control_create_instance 使用元类控制实例的创建
+* 96.capture_class_attribute_definition_order 捕获类的属性的定义顺序
