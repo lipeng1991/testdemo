@@ -99,3 +99,5 @@
 * 97.capture_class_attribute_definition_order 捕获类的属性的定义顺序
 * 98.meta_programming 元编程
 * 99.singleton_with_metaclass 元类实现单例模式
+* 100.myatoi.py 字符串转换整数
+
